@@ -135,9 +135,13 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   let result = 1
-  for(let i = 0; i < argumentos.length; i++){
-    resul *= argumentos[1]
+  if(arguments.length === 0){
+    return 0;
   }
+  for(let i = 0; i < arguments.length; i++){
+    result *= arguments[i]
+  }
+
   return result;
 }
 
